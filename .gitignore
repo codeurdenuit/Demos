@@ -1,0 +1,17 @@
+.DS_Store
+node_modules
+/build
+/.svelte-kit
+/package
+/static/assets/gui
+/static/assets/character
+/static/assets/background
+/src/config/assetsBackground.js
+/src/config/assetsCharacter.js
+/src/config/assetsGui.js
+/dist
+.env
+*.zip
+.env.*
+*.clip
+!.env.example
