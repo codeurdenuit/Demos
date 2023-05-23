@@ -15,9 +15,10 @@ camera.lookAt(0, 1.3, 0)
 const geometry = await GLTFLoader.loadGeometry('mario/mesh.glb')
 
 const texture = await GLTFLoader.loadTexture('mario/texture.png')
-const material = new THREE.MeshPhongMaterial()
-//const material = new THREE.MeshPhongMaterial({ map: texture, shininess: 0 })
 //const material = new THREE.MeshBasicMaterial()
+//const material = new THREE.MeshPhongMaterial()
+const material = new THREE.MeshPhongMaterial({ map: texture, shininess: 0 })
+
 
 const mesh = new THREE.Mesh(geometry, material)
 

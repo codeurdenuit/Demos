@@ -10,8 +10,8 @@ const height = window.innerHeight
 const scene = new THREE.Scene()
 
 const camera = new THREE.PerspectiveCamera(45, width / height, 1, 1000)
-camera.position.set(0, 1.3, 4)
-camera.lookAt(0, 1.3, 0)
+camera.position.set(0, 1, 3)
+camera.lookAt(0, 1, 0)
 
 const geometry = await GLTFLoader.loadGeometry('link/mesh.glb')
 
@@ -32,7 +32,7 @@ const renderer = new THREE.WebGLRenderer({ canvas, antialias: true })
 renderer.setSize(window.innerWidth, window.innerHeight)
 
 const controls = new OrbitControls(camera, renderer.domElement)
-controls.target.set(0.0, 1.3, 0)
+controls.target.set(0.0, 1, 0)
 controls.update()
 renderer.render(scene, camera)
 
